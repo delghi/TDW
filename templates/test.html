@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <h3>Lista</h3>
+
+
+<[foreach]>
+				<h3><span class="ui-accordion-header-icon ui-icon ui-accordion-icon ui-accordion-icon-active"></span><[name]></h3>
+				<div><p>
+					<form>
+					
+					
+						<input type="hidden" name="page" value="2" />
+						<input type="hidden" name="id" value="<[id]>" />
+		
+						<div>
+							<label class="border" for="name">Name</label>
+							<input class="mandatory" type="text" value="<[name]>" name="name" id="name" errormessage="Pippo!"/>
+						</div>
+						<div>
+							<label for="description">Description</label>
+							<textarea class="" name="description" id="description" cols="50" rows="10"><[nome]></textarea>
+						</div>
+						<div>
+							<label class="border" for="position">Position</label>
+							<input type="text" name="position"  value="<[position]>" id="position" />
+						</div>
+				
+					<input type="submit" class="submit" id="submit" value="Update" />
+					</form></p>
+				</div>
+				<[/foreach]>
+<hr>
+
+
+
+
+        <div>TODO write content</div>
+    </body>
+</html>
